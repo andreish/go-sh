@@ -88,6 +88,15 @@ func InteractiveSession() *Session {
 	return s
 }
 
+func (s* Session) Commands() []*exec.Cmd {
+	return s.cmds
+} 
+
+func (s* Session) LastCommand() []*exec.Cmd {
+	return s.cmds[len(s.cmds)-1]
+} 
+
+
 func Command(name string, a ...interface{}) *Session {
 	s := NewSession()
 	return s.Command(name, a...)
