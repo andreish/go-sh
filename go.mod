@@ -1,4 +1,4 @@
-module github.com/codeskyblue/go-sh
+module github.com/andreish/go-sh
 
 go 1.12
 
