@@ -92,7 +92,7 @@ func (s* Session) Commands() []*exec.Cmd {
 	return s.cmds
 } 
 
-func (s* Session) LastCommand() []*exec.Cmd {
+func (s* Session) LastCommand() *exec.Cmd {
 	return s.cmds[len(s.cmds)-1]
 } 
 
